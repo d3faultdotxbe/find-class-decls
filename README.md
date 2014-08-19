@@ -1,7 +1,9 @@
 I spent hours trying to get the RecursiveASTVisitor tutorial ( http://clang.llvm.org/docs/RAVFrontendAction.html ) to compile/link on Debian Wheezy, so I might as well share the results that worked.
 
 Even though the target is Debian Wheezy, you need the Jessie (3.4 at time of writing) build of LLVM/Clang, so put the following line in your /etc/apt/sources.list
+```
 deb http://http.debian.net/debian/ jessie main
+```
 
 Then:
 ```
