@@ -12,6 +12,18 @@ Then:
 ```
 
 Clone this repo and cd into it as normal user, then:
+
+qmake:
+---------
+```
+$ qmake
+$ make
+```
+
+or
+
+cmake:
+----------
 ```
 $ mkdir build
 $ cd build
@@ -25,5 +37,4 @@ Test it out:
 ```
 
 
-I suck at using CMake and don't care enough to learn how to do this properly, which is why you see hard-coded paths in the CMake config files <3...
-
+I suck at life and don't care enough to learn how to resolve paths properly, which is why you see hard-coded paths in the qmake/cmake config files <3...
