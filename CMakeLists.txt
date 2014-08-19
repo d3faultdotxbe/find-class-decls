@@ -14,6 +14,15 @@ include_directories(
 )
 
 add_executable(find-class-decls FindClassDecls.cpp)
-target_link_libraries(find-class-decls
-  ${LibClang_LIBRARIES}
-)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libclangTooling.a)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libclangDriver.a)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libclangFrontend.a)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libclangParse.a)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libclangSema.a)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libclangEdit.a)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libclangAnalysis.a)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libclangLex.a)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libclangSerialization.a)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libclangAST.a)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libclangBasic.a)
+target_link_libraries(find-class-decls /usr/lib/llvm-3.4/lib/libLLVM-3.4.so)
